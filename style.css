@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Starella;
+  src: url(font/StarellaScriptPersonalUse-BZrB.ttf);
+}
+html {
+  background: url(img/Prinsesje_achtergrond.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  background: url(img/Prinsesje_achtergrond.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 47%;
+  top: 0;
+  margin-left: -150px;
+}
+
+#home_col img {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 90%;
+}
+
+#home_container {
+  margin-top: 500px;
+  margin-bottom: 100px;
+}
+
+#home_col {
+  position: relative;
+}
+
+#aandacht {
+  color: #ff6a9c;
+  margin-top: 2em;
+  text-align: center;
+  position: absolute;
+  border-radius: 15px;
+  background-color: white;
+  font-family: Starella;
+  font-size: xxx-large;
+}
+
+#aandacht_container {
+  background-color: white;
+  margin-top: 350px;
+}
+
+#aandacht_col {
+  font-family: Starella;
+  font-size: xxx-large;
+  color: #ff6a9c;
+  text-align: center;
+}
+
+#buttons button {
+  background-color: #ff6a9c;
+  border: #ff6a9c;
+  width: 60px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#buttons_aandacht button {
+  background-color: #ff6a9c;
+  border: #ff6a9c;
+  font-family: Starella;
+  font-size: xx-large;
+}
+
+#buttons_datum button {
+  background-color: #ff6a9c;
+  border: #ff6a9c;
+  font-family: Starella;
+  font-size: xxx-large;
+  margin-top: 40px;
+}
+
+#buttons_nood button {
+  background-color: red;
+  border: #ff6a9c;
+  font-family: Starella;
+  font-size: xx-large;
+}
+
+.btn-circle.btn-xl {
+  width: 80px;
+  height: 70px;
+  padding: 8px 15px;
+  border-radius: 40px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: Starella;
+  font-size: xx-large;
+  background-color: red;
+  color: white;
+}
+
+#form_aandacht {
+  display: none;
+}
+
+#button_back button {
+  background-color: white;
+  font-family: Starella;
+  color: #ff6a9c;
+  border: #ff6a9c;
+  width: 60px;
+  height: 40px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+#foto_container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  background-color: white;
+  height: 650px;
+  width: 1300px;
+}
+
+#foto_col {
+  position: relative;
+}
+
+#foto_col img {
+  border: 1px solid #ff6a9c;
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+/* calender */
+#container_datum {
+  margin-top: 100px;
+  background-color: white;
+  height: 600px;
+}
+#col_datum {
+  margin-right: 60px;
+}
+#col_datum p {
+  text-align: center;
+  font-family: Starella;
+  font-size: xxx-large;
+  color: #ff6a9c;
+}
+.date-picker {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 60px;
+  background-color: #ff6a9c;
+  margin: 30px auto;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.date-picker:hover {
+  background-color: #ff6a9c;
+}
+
+.date-picker .selected-date {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 28px;
+}
+
+.date-picker .dates {
+  /* display: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  background-color: #ff6a9c;
+}
+
+.date-picker .dates.active {
+  display: block;
+}
+
+.date-picker .dates .month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.date-picker .dates .month .arrows {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.date-picker .dates .month .arrows:hover {
+  background-color: #f3f3f3;
+}
+
+.date-picker .dates .month .arrows:active {
+  background-color: white;
+}
+
+.date-picker .dates .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 200px;
+}
+.date-picker .dates .days .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.date-picker .dates .days .day.selected {
+  background-color: lightpink;
+}
